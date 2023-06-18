@@ -29,7 +29,7 @@ import com.az.wallmindui.model.WmWallpaper
 @Composable
 @Preview(device = Devices.PIXEL_4, backgroundColor = 0xFFFFFFFF, showBackground = true)
 fun WmFavouritePill(
-    wmWallpaper: WmWallpaper = WmWallpaper(),
+    wmWallpaper: WmWallpaper = WmWallpaper(isFavorite = false),
     onFavouriteClicked: (String) -> Unit = {}
 ) {
     var isFavourite by remember { mutableStateOf(wmWallpaper.isFavorite) }
@@ -62,7 +62,7 @@ private fun WmAnimatedButton(
     onClick: () -> Unit = {},
     isFlipped: Boolean = false,
     shape: Shape = RoundedCornerShape(10.dp),
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit = {}
 ) {
     val rotationY by animateFloatAsState(
         targetValue = if (isFlipped) 180f else 0f,
