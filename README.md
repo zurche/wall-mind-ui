@@ -43,5 +43,3 @@ And that's it! You now have a beautiful favorite icon that flips and changes col
 - Feel free to modify the padding and shape parameters to suit your UI design.
 
 - Remember to have fun with your users! Maybe you could consider displaying a little message like "Your users will fall in love with this feature!" after they click the favorite button. 😉
-
-That's all you need to know to use the WmFavouritePill Composable. We hope you have a great time incorporating it into your Android project. Happy coding and spreading the love! 🥳❤️
